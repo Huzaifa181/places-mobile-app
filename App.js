@@ -20,19 +20,14 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import PlacesNavigator from './navigation/PlacesNavigator';
 
 const rootReducer = combineReducers({
   products: productReducer,
 });
 const store = createStore(rootReducer);
 const App = () => {
-  return (
-    <Provider store={store}>
-      <View>
-        <Text>Application</Text>
-      </View>
-    </Provider>
-  );
+  return <PlacesNavigator />;
 };
 
 const styles = StyleSheet.create({});
