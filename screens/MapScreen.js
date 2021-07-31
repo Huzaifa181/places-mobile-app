@@ -1,9 +1,9 @@
 import React from 'react';
 import {StyleSheet, View, Text} from 'react-native';
 
-function MapScreen(props) {
-  return <View>MapScreen</View>;
-}
+const MapScreen = props => {
+  return <Text>MapScreen</Text>;
+};
 
 const styles = StyleSheet.create();
 

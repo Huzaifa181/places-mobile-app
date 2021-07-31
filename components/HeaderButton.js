@@ -1,5 +1,5 @@
 import React from 'react';
-import Colors from '../../constants/colors/Colors';
+import Colors from '../assets/Colors';
 import {
   View,
   Text,
@@ -26,4 +26,5 @@ export const MaterialHeaderButtons = props => {
     <HeaderButtons HeaderButtonComponent={MaterialHeaderButton} {...props} />
   );
 };
+
 const styles = StyleSheet.create({});

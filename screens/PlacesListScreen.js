@@ -1,11 +1,11 @@
 import React from 'react';
 import {StyleSheet, View, Text} from 'react-native';
 import {Item} from 'react-navigation-header-buttons';
-import HeaderButton from '../components/HeaderButton';
+import {MaterialHeaderButtons} from '../components/HeaderButton';
 
-function PlacesListScreen(props) {
-  return <View>PlacesListScreen</View>;
-}
+const PlacesListScreen = props => {
+  return <Text>PlacesListScreen</Text>;
+};
 
 PlacesListScreen.navigationOptions = {
   headerTitle: 'All Places',
