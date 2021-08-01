@@ -1,4 +1,8 @@
 {
   "name": "AwesomeNativeBase",
-  "displayName": "AwesomeNativeBase"
+  "displayName": "AwesomeNativeBase",
+  "android": {
+    "permissions": ["READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE"],
+    "package": "com.awesomenativebase"
+  }
 }

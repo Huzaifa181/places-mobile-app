@@ -11,23 +11,29 @@ import {
   Text,
   Button,
 } from 'react-native';
-import productReducer from './store/reducer/products';
+import placeReducer from './store/reducer/places';
 import {Provider} from 'react-redux';
-import {createStore, combineReducers} from 'redux';
+import {createStore, combineReducers, applyMiddleware} from 'redux';
 import {
   Colors,
   DebugInstructions,
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import ReduxThunk from 'redux-thunk';
 import PlacesNavigator from './navigation/PlacesNavigator';
 
 const rootReducer = combineReducers({
-  products: productReducer,
+  places: placeReducer,
 });
-const store = createStore(rootReducer);
+
+const store = createStore(rootReducer, applyMiddleware(ReduxThunk));
 const App = () => {
-  return <PlacesNavigator />;
+  return (
+    <Provider store={store}>
+      <PlacesNavigator />
+    </Provider>
+  );
 };
 
 const styles = StyleSheet.create({});
