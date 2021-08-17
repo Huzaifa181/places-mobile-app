@@ -2,7 +2,14 @@
   "name": "AwesomeNativeBase",
   "displayName": "AwesomeNativeBase",
   "android": {
-    "permissions": ["READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE"],
+    "permissions": [
+      "READ_EXTERNAL_STORAGE",
+      "ACCESS_BACKGROUND_LOCATION",
+      "WRITE_EXTERNAL_STORAGE",
+      "FOREGROUND_SERVICE",
+      "ACCESS_FINE_LOCATION",
+      "ACCESS_COARSE_LOCATION"
+    ],
     "package": "com.awesomenativebase"
   }
 }
